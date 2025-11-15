@@ -1,0 +1,17 @@
+# Monitoreo y Auditoría de Accesos
+
+Se analizaron logs del archivo `scripts/logs_accesos.txt`.
+
+## Regla aplicada
+Si hay más de 5 intentos fallidos desde la misma IP en pocos minutos → posible ataque de fuerza bruta.
+
+## Ejemplo detectado
+- Usuario: admin_ny  
+- IP: 203.0.113.45  
+- Intentos fallidos: 5  
+- Tiempo: 10:01 - 10:04  
+
+## Recomendaciones
+- Bloquear temporalmente la cuenta.
+- Revisar la IP sospechosa.
+- Notificar al equipo de seguridad.

@@ -1,0 +1,16 @@
+# Configuración de Autenticación Multifactor (MFA)
+
+Se activó MFA usando Google Authenticator.
+
+## Pasos realizados
+1. Abrir GitHub → Settings.
+2. Ir a “Password and authentication”.
+3. Activar “Two-factor authentication”.
+4. Seleccionar “Authenticator app”.
+5. Escanear el código QR desde Google Authenticator.
+6. Ingresar el código generado para validar.
+
+## Resumen
+| Cuenta     | MFA     | Resultado |
+|------------|---------|-----------|
+| GitHub     | Activa  | OK        |

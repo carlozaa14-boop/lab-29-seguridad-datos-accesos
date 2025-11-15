@@ -1,0 +1,14 @@
+# Control de Acceso Basado en Roles (RBAC)
+
+## Roles definidos
+| Rol           | Permisos                                           |
+|--------------|----------------------------------------------------|
+| Administrador | Acceso total a sistemas y datos financieros        |
+| Analista      | Lectura de reportes, sin capacidad de modificar    |
+| Usuario       | Acceso limitado, sin ver información sensible      |
+
+## Ejemplo simulado en Active Directory
+New-ADGroup -Name "Administradores" -GroupScope Global -Path "OU=Seguridad,DC=globaltech,DC=com"
+New-ADGroup -Name "Analistas" -GroupScope Global -Path "OU=Seguridad,DC=globaltech,DC=com"
+Add-ADGroupMember -Identity "Analistas" -Members "Juan.Perez"
+
